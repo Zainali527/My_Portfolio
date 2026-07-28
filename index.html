@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- AOS CSS CDN (Scroll Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Zain Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="container position-relative">
+            <div class="row align-items-center py-2 text-center">
+                <div class="col-6 col-md-4 d-flex align-items-center justify-content-start">
+                    <button class="btn btn-light d-lg-none p-2 shadow-sm" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#combinedCollapse" aria-controls="combinedCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img src="./assets/justify.svg" alt="menu" width="24" height="24" class="d-block">
+                    </button>
+                    <div class="d-none d-lg-block w-100 p-3">
+                        <nav>
+                            <ul class="flex-row navbar-nav mb-2 mb-lg-0 gap-lg-4 text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active nav-elements" aria-current="page" href="#hero">Home</a>
+                                </li>
+                                <li class="nav-item text-dark">
+                                    <a class="nav-link nav-elements" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-elements" href="#skills">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-elements" href="#projects">Projects</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <div class="fw-bold mx-auto">
+                        <img class="main-logo" src="./assets/logo.jpeg" alt="main logo">
+                    </div>
+                </div>
+                <div class="d-none d-md-flex col-md-4 align-items-center justify-content-end">
+                    <div class="w-100 fw-bold text-white">
+                        <img class="social-logo" src="./assets/twitter_logo.webp" alt="twitter">
+                        <img class="social-logo" src="./assets/facebook_logo.jpeg" alt="facebook">
+                        <img class="social-logo" src="./assets/github_logo.png" alt="github">
+                        <img class="social-logo" src="./assets/instagram_logo.jpeg" alt="instagram">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COMBINED DROPDOWN MENU -->
+            <div class="collapse navbar-collapse position-absolute start-0 shadow-lg p-3 rounded-bottom"
+                id="combinedCollapse" style="top: 100%; z-index: 1000; width: 60%;">
+
+                <div class="d-lg-none p-3 text-start mb-2 rounded">
+                    <nav>
+                        <ul class="navbar-nav flex-column gap-2">
+                            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="d-md-none p-1 text-center fw-bold text-white rounded">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <img class="social-logo-dropdown" src="./assets/twitter_logo.webp" alt="twitter">
+                        <img class="social-logo-dropdown" src="./assets/facebook_logo.jpeg" alt="facebook">
+                        <img class="social-logo-dropdown" src="./assets/github_logo.png" alt="github">
+                        <img class="social-logo-dropdown" src="./assets/instagram_logo.jpeg" alt="instagram">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="spacer"></div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="w-100">
+            <div class="container d-flex justify-content-center">
+                <h1 class="text-dark text-center hero-title display-4 display-md-2 display-lg-1" data-aos="fade-up" data-aos-duration="1000">
+                    Muhammad Zain Ali<br>Full Stack Web Developer<br>Based in Pakistan
+                </h1>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container-xxl">
+                <div class="row align-items-center justify-content-center gy-4">
+
+                    <!-- 1. CENTER IMAGE -->
+                    <div id="main-image"
+                        class="col-12 col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0" 
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="hero-image-container">
+                            <div class="bg-accent accent-left"></div>
+                            <div class="white-border">
+                                <div class="portrait-card">
+                                    <img class="portrait-img"
+                                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+                                        alt="Portrait">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. LEFT CONTENT -->
+                    <div id="left-content"
+                        class="col-sm-6 col-md-5 col-lg-3 order-2 order-lg-1 d-flex flex-column align-items-center align-items-md-end text-start"
+                        data-aos="fade-right" data-aos-duration="1000">
+                        <div class="w-100" style="max-width: 260px;">
+                            <div class="mb-4">
+                                <div class="about-div-h6">
+                                    <h6>BIOGRAPHY</h6>
+                                </div>
+                                <div class="div-spacer"></div>
+                                <p class="about-div-p w-100">
+                                    Code for function and design for impact! I’m <strong class="text-black">Muhammad
+                                        Zain Ali</strong>, a Frontend Web Developer based in Pakistan.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="about-div-h6">
+                                    <h6>CONTACT</h6>
+                                </div>
+                                <div class="div-spacer"></div>
+                                <div class="about-div-p w-100">
+                                    <p class="mb-1">Multan, Pakistan</p>
+                                    <p class="mb-1">iamali0527@gmail.com</p>
+                                    <p class="mb-1">+92 3150064901</p>
+                                    <p class="mb-0">@Zainali8748</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="about-div-h6">
+                                    <h6>SERVICES</h6>
+                                </div>
+                                <div class="div-spacer"></div>
+                                <div class="about-div-p w-100">
+                                    <p class="mb-1">Modern Web Development</p>
+                                    <p class="mb-1">Frontend Architecture (React)</p>
+                                    <p class="mb-0">Responsive UI/UX Layouts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. RIGHT CONTENT -->
+                    <div id="right-content"
+                        class="col-sm-6 col-md-5 col-lg-3 order-3 order-lg-3 d-flex flex-column align-items-center align-items-md-center text-start"
+                        data-aos="fade-left" data-aos-duration="1000">
+                        <div class="w-100" style="max-width: 260px;">
+                            <div class="mb-4">
+                                <div class="about-div-h6">
+                                    <h6>EXPERIENCE</h6>
+                                </div>
+                                <div class="div-spacer"></div>
+                                <div class="div-number">
+                                    <p class="mb-0">1+</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="about-div-h6">
+                                    <h6>TECH STACK</h6>
+                                </div>
+                                <div class="div-spacer"></div>
+                                <div class="div-number">
+                                    <p class="mb-0">8+</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="about-div-h6">
+                                    <h6>PERFORMANCE</h6>
+                                </div>
+                                <div class="div-spacer"></div>
+                                <div class="div-number">
+                                    <p class="mb-0">100%</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="about-div-h6">
+                                    <h6>PROJECT DONE</h6>
+                                </div>
+                                <div class="div-spacer"></div>
+                                <div class="div-number">
+                                    <p class="mb-0">10+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- Client / Brand Logos Section -->
+        <section id="clients" class="pt-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-3 g-lg-4">
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="logo-item d-flex justify-content-center align-items-center">
+                            <img src="./assets/brand1.webp" alt="Brand 1" class="img-fluid client-logo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="logo-item d-flex justify-content-center align-items-center">
+                            <img src="./assets/brand2.jpeg" alt="Brand 2" class="img-fluid client-logo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="logo-item d-flex justify-content-center align-items-center">
+                            <img src="./assets/brand3.jpeg" alt="Brand 3" class="img-fluid client-logo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg" data-aos="fade-up" data-aos-delay="400">
+                        <div class="logo-item d-flex justify-content-center align-items-center">
+                            <img src="./assets/brand4.png" alt="Brand 4" class="img-fluid client-logo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg" data-aos="fade-up" data-aos-delay="500">
+                        <div class="logo-item d-flex justify-content-center align-items-center">
+                            <img src="./assets/brand5.png" alt="Brand 5" class="img-fluid client-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+        <div class="container-xxl">
+            <hr class="custom-divider">
+        </div>
+
+        <!-- Skills / Advantage Section -->
+        <section id="skills" class="py-5 bg-white">
+            <div class="container-xxl">
+
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">My Advantage</h2>
+                </div>
+
+                <div class="row justify-content-center g-4">
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="skill-card text-center">
+                            <div class="skill-pill mb-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5" class="skill-icon">
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <p class="skill-label">HTML5</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="skill-card text-center">
+                            <div class="skill-pill mb-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS3" class="skill-icon">
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <p class="skill-label">CSS3</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="skill-card text-center">
+                            <div class="skill-pill mb-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript" class="skill-icon">
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <p class="skill-label">JavaScript</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="skill-card text-center">
+                            <div class="skill-pill mb-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    alt="React" class="skill-icon">
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <p class="skill-label">React</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="skill-card text-center">
+                            <div class="skill-pill mb-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                    alt="Node.js" class="skill-icon">
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <p class="skill-label">Node.js</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="skill-card text-center">
+                            <div class="skill-pill mb-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                    alt="Bootstrap" class="skill-icon">
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <p class="skill-label">Bootstrap</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <div class="spacer"></div>
+        <div class="container-xxl">
+            <hr class="custom-divider">
+        </div>
+        <div class="spacer"></div>
+
+        <!-- Education & Experience Section -->
+        <section id="education-experience" class="py-5 bg-white">
+            <div class="container-xxl">
+
+                <div class="text-center mb-5 pb-lg-4" data-aos="fade-up">
+                    <h2 class="section-heading">Education & Experience</h2>
+                </div>
+
+                <div class="row g-4 g-lg-5">
+
+                    <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-date mb-4">2019 – 2025</div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                            <p class="timeline-subtitle">NFC Institute of Engineering & Technology</p>
+                        </div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">Intermediate in Pre-Engineering</h4>
+                            <p class="timeline-subtitle">KIPS College</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-date mb-4">2024 – 2025</div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">E-Commerce Specialist</h4>
+                            <p class="timeline-subtitle">Amazon FBA / Wholesale & Dropshipping</p>
+                        </div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">Virtual Assistant</h4>
+                            <p class="timeline-subtitle">Account Health & Product Management</p>
+                        </div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">Flutter Mobile App Developer</h4>
+                            <p class="timeline-subtitle">REST APIs & Clean Architecture</p>
+                        </div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">Lead Developer — Concord App</h4>
+                            <p class="timeline-subtitle">Real-Time Q&A & Community Chat Platform</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-date mb-4">2025 – PRESENT</div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">Frontend Web Developer</h4>
+                            <p class="timeline-subtitle">React.js, JavaScript, Tailwind CSS & Vite</p>
+                        </div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">UI/UX Layout Architect</h4>
+                            <p class="timeline-subtitle">Responsive Web Applications & Interfaces</p>
+                        </div>
+
+                        <div class="timeline-block mb-5">
+                            <h4 class="timeline-title">Freelance Web Developer</h4>
+                            <p class="timeline-subtitle">Modern Custom Web Solutions</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <div class="container-xxl">
+            <hr class="custom-divider">
+        </div>
+        <div class="spacer"></div>
+
+        <!-- My Latest Projects Section -->
+        <section id="projects" class="py-5 bg-white">
+            <div class="container-xxl">
+
+                <div class="text-center mb-5 pb-lg-3" data-aos="fade-up">
+                    <h2 class="section-title">My Latest Projects</h2>
+                </div>
+
+                <div class="row g-4 g-lg-5 justify-content-center">
+
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card">
+                            <div class="project-img-wrapper mb-4">
+                                <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=800&q=80"
+                                    alt="Concord Real-Time Chat App UI" class="project-img">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">Full Stack / Real-Time</span>
+                                <h3 class="project-title">Concord Q&A & Community Chat App</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-img-wrapper mb-4">
+                                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+                                    alt="Weather App Dashboard UI" class="project-img">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">REST API / UI/UX</span>
+                                <h3 class="project-title">Clean Weather Mobile Dashboard</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card">
+                            <div class="project-img-wrapper mb-4">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                                    alt="E-Commerce Storefront UI Layout" class="project-img">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">E-Commerce / Frontend</span>
+                                <h3 class="project-title">Responsive Marketplace Storefront</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container-xxl">
+            <hr class="custom-divider">
+        </div>
+        <div class="spacer"></div>
+        
+        <section>
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <p class="col-md-4 mb-0 text-body-secondary">© 2026 Zain Ali, Inc</p> 
+                    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap"> 
+                        <img src="./assets/logo.jpeg" class="main-logo" alt="Logo"> 
+                    </a>
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="#hero" class="nav-link px-2 text-body-secondary">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link px-2 text-body-secondary">Advantages</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link px-2 text-body-secondary">Projects</a></li>
+                        <li class="nav-item"><a href="#education-experience" class="nav-link px-2 text-body-secondary">Education</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,   // Animation duration (in ms)
+            once: false,      // Triggers animations every time you scroll up/down
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+
+</html>
